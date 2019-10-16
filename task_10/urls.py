@@ -1,5 +1,4 @@
 """task_10 URL Configuration
-
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.0/topics/http/urls/
 Examples:
@@ -29,7 +28,7 @@ urlpatterns = [
     path('restaurants/update/<int:restaurant_id>/',views.restaurant_update ,name='restaurant-update'),
     path('restaurants/delete/<int:restaurant_id>/',views.restaurant_delete ,name='restaurant-delete'),
 
-    path('restaurants/   /item/add/',views.item_create ,name='item-create'),
+    path('restaurants/item/add/<int:restaurant_id>/',views.item_create ,name='item-create'),
 
     path('signup/',views.signup ,name='signup'),
     path('signin/',views.signin ,name='signin'),
